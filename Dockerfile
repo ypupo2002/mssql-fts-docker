@@ -1,11 +1,8 @@
 # mssql-agent-fts-ha-tools
-# Maintainers: Microsoft Corporation (twright-msft on GitHub)
-# GitRepo: https://github.com/Microsoft/mssql-docker
+# Original gitRepo: https://github.com/Microsoft/mssql-docker
 
-# Base OS layer: Latest Ubuntu LTS
 FROM ubuntu:16.04
 
-# Install prerequistes since it is needed to get repo config for SQL server
 RUN export DEBIAN_FRONTEND=noninteractive && \
     apt-get update && \
     apt-get install -yq curl apt-transport-https && \
